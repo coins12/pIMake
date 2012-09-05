@@ -6,7 +6,7 @@ TRG= ${SRC:.c=}
 .PHONY: all
 all: ${TRG}
 
-CFLAGS= -Wall -Werror -O2
+CFLAGS= -Wall -Werror -O2 -std=gnu99
 
 %: %.c
 	${CC} ${CFLAGS} -o $@ $^
